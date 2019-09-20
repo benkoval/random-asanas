@@ -40,12 +40,12 @@ export default class Pose extends React.Component {
         return (
             <div className='asana_container'>
                 {this.state.sansName && <div className='asana_card'>
-                    <h2 className='pose_info sans'>{this.state.sansName}</h2>
-                    <h2 className='pose_info eng'>{this.state.engName}</h2>
+                <h2 className='pose_info sans'>{this.state.sansName}</h2>
                     <img
                         className='asana_img'
                         alt={this.state.engName}
                         src={this.state.img} />
+                <h2 className='pose_info eng'>{this.state.engName}</h2>    
                 </div>}
             </div>
         );
