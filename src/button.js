@@ -20,14 +20,14 @@ export default class Button extends React.Component {
         <div>
             <section
             className='btn_container'>
-                <h1 className='title'>Wellness through yoga</h1>
+                <h1 className='text title'>Wellness through yoga</h1>
                 
-                <h2 class='subtitle'>Click the button below for a random set of three popular asanas.</h2>
+                <h2 class='text subtitle'>Click the button below for a random set of three popular asanas.</h2>
                 <button 
-                className='zen'
+                className='btn zen'
                 onClick={
                     this.createChildren}>
-                    Zen
+                    Zen out
                 </button>
             </section>
                 <section className='asanas_container'>
