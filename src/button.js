@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './button.scss';
-import Pose from 'Pose.js';
-import axios from 'axios';
+import Pose from './pose.js';
 
-class Button extends React.Component {
+export default class Button extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,8 +36,3 @@ class Button extends React.Component {
     }
 
 }
-
-ReactDOM.render(
-    <Button />,
-    document.getElementById('root')
-);
