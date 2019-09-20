@@ -50,6 +50,7 @@ $blu: rgb(15, 127, 179);
 
 .zen:hover,
 .zen:focus {
+    cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
     border-color: var(--hover);
