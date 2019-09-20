@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './pose.scss';
 import axios from 'axios';
 
@@ -39,10 +38,10 @@ export default class Pose extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className='asana_container'>
                 {this.state.sansName && <div className='asana_card'>
-                    <h2 class=''>{this.state.sansName}</h2>
-                    <h2>{this.state.engName}</h2>
+                    <h2 className='pose_info sans'>{this.state.sansName}</h2>
+                    <h2 className='pose_info eng'>{this.state.engName}</h2>
                     <img
                         className='asana_img'
                         alt={this.state.engName}

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './button.scss';
 import Pose from './pose.js';
 
@@ -15,9 +14,6 @@ export default class Button extends React.Component {
         this.child1.randomAsana()
         this.child2.randomAsana()
         this.child3.randomAsana()
-    }
-    log() {
-        console.log('sdjkgfasjdhkfgjksdg')
     }
     render() {
         return (
