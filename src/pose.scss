@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 $sans: 'Open Sans', sans-serif;
 $gradientPnk: linear-gradient(30deg, #F114F8, #9E5AED, #2DAAE4, #04DCDB);
-$gradientBlu: linear-gradient(to bottom, #04DCDB, #2DAAE4, #9E5AED, #F114F8);
 
 .pose_info {
     font-family: $sans;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin: auto;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     width: 15vw;
     text-align: center;
-    // border-radius: .5em;
-    // height: inherit;
     text-transform: uppercase;
     text-align: center;
-    // background: $gradientBlu;
     color: #fff;
     letter-spacing: 0.2rem;
     text-shadow: 2px 2px 2px #7b7be8;
 }
 
 .sans {
-    z-index: 1;
     position: absolute;
 }
 
@@ -33,7 +28,6 @@ $gradientBlu: linear-gradient(to bottom, #04DCDB, #2DAAE4, #9E5AED, #F114F8);
 .asana_img {
     filter: invert(100%) drop-shadow(3px 6px 4px #4444dd);
     height: 7vw;
-    z-index: 3;
     position: relative;
     margin: auto;
 }
@@ -46,25 +40,6 @@ $gradientBlu: linear-gradient(to bottom, #04DCDB, #2DAAE4, #9E5AED, #F114F8);
     background: $gradientPnk;
     border-radius: 1em;
     filter: drop-shadow(4px 8px 4px #7b7be8);
-  
-    // position: relative;
-    // box-sizing: border-box;
-  
-    // $border: 3px;
-    // background: $gradientPnk;
-    // background-clip: padding-box;
-    // border: solid $border transparent;
-    // border-radius: 1em;
-  
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0; right: 0; bottom: 0; left: 0;
-    //   z-index: -1;
-    //   margin: -$border;
-    //   border-radius: inherit;
-    //   background: $gradientPnk;
-    // }
 }
 
 .asanas_container {

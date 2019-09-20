@@ -8,26 +8,34 @@ export default class Button extends React.Component {
         this.state = {
             arrayOfPoses: [],
         };
-        this.mappy = this.mappy.bind(this);
+        this.createChildren = this.createChildren.bind(this);
     }
-    mappy() {
+    createChildren() {
         this.child1.randomAsana()
         this.child2.randomAsana()
         this.child3.randomAsana()
     }
     render() {
         return (
-            <div>
-                <button onClick={
-                    this.mappy}>
-                    hey
+        <div>
+            <section
+            className='btn_container'>
+                <h1 className='title'>Wellness through yoga</h1>
+                
+                <h2 class='subtitle'>Click the button below for a random set of three popular asanas.</h2>
+                <button 
+                className='zen'
+                onClick={
+                    this.createChildren}>
+                    Zen
                 </button>
-                <div className='asanas_container'>
+            </section>
+                <section className='asanas_container'>
                     <Pose onRef={ref => (this.child1 = ref)} key='1' />
                     <Pose onRef={ref => (this.child2 = ref)} key='2' />
                     <Pose onRef={ref => (this.child3 = ref)} key='3' />
-                </div>
-            </div>
+                </section>
+        </div>
         )
     }
 
